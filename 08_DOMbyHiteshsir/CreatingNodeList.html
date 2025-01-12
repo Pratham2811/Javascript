@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code </title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <script >
+     let div=   document.createElement('div')
+     div.className='main'
+     div.id='myid'
+    
+
+     //funn i js creating id in another way 
+     div.id=Math.random(Math.random()*10)+1
+     console.log(div)
+     //setting the Random attribute using the setAttribute
+     div.setAttribute('title','generated title')
+     //here title attribute title='generated title'
+
+     //styling
+     div.style.backgroundColor="green"
+     div.textContent="Chai Aur Code"
+
+    //another method to set text content
+    const text=document.createTextNode('chai aur Code')
+    div.appendChild(text)
+
+    //adding div to body for display
+    document.body.appendChild(div)//text is shown
+    
+    </script>
+</body>
+</html>

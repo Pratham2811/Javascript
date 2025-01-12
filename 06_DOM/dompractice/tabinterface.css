@@ -1,0 +1,22 @@
+#tabs{
+    height: 10vh;
+    width: 50%;
+ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tab{
+    background-color: rgb(238, 229, 229);
+    height: 5vh;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+
+}
+h3{
+    font-weight: 600;
+    display: none;
+}

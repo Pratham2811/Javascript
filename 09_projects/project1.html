@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body class="bg-black text-white">
+    <!-- Search Bar -->
+    <div id="search" class="h-32 bg-teal-600 flex items-center justify-center">
+        <input id="input"  type="text" placeholder="Search" class="bg-white h-10 w-80 md:w-96 rounded-full pl-5 text-black font-mono">
+        <button id="search-icon" class="w-10 h-10 bg-white rounded-full flex justify-center items-center ml-4">
+            <i class="ri-search-line text-black text-xl"></i>
+        </button>
+    </div>
+
+    <!-- Weather Icons -->
+    <div id="images" class="flex justify-center mt-8 space-x-8">
+        <img src="./images/drizzle.png" class="w-20" alt="Drizzle" id="Drizzle">
+        <img src="./images/mist.png" class="w-20" alt="Mist"id="Mist" >
+        <img src="./images/snow.png" class="w-20" alt="Snow" id="Snow">
+        <img src="./images/rain.png" class="w-20" alt="Rain" id="Rain">
+    </div>
+
+    <!-- Weather Stats -->
+    <div id="stats" class="text-center mt-10">
+        <h1 id="temperature" class="text-6xl font-mono">22°C</h1>
+        <h2 id="city" class="text-3xl font-mono mt-2">New York</h2>
+    </div>
+
+    <!-- Bottom Stats (Humidity and Wind Speed) -->
+    <div id="bottom" class="h-16 mt-20 flex justify-between items-center px-24">
+        <!-- Humidity -->
+        <div id="humidity" class="flex items-center">
+            <img src="./images/humidity.png" class="w-8 h-8" alt="Humidity">
+            <h1 id="humidity-stats" class="ml-4 text-xl font-mono">66%<br>Humidity</h1>
+        </div>
+        <!-- Wind Speed -->
+        <div id="windspeed" class="flex items-center">
+            <img src="./images/wind.png" class="w-8 h-8" alt="Wind">
+            <h1 id="wind-speed-stats" class="ml-4 text-xl font-mono">10 km/h<br>Wind Speed</h1>
+        </div>
+    </div>
+    <script>
+        const input=document.querySelector("#input")
+        const button=document.querySelector("#search-icon") 
+        const images=document.querySelector("")
+    </script>
+</body>
+</html>

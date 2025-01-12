@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+    <h1>Hello</h1>
+    <button id="btn1" class="mr-10">Start</button>
+    <button id="btn2">Stop</button>
+    <script>
+     const btn1=document.querySelector('#btn1')
+     const btn2=document.querySelector('#btn2')
+     const h1= document.querySelector('h1')
+     let printName
+     btn1.addEventListener('click',function(){
+                 printName=function(){
+                    h1.innerHTML+=('  Hello')
+                   }
+                setInterval(printName,100)
+        })
+        btn2.addEventListener('click',function(){
+            clearInterval()
+        })
+
+    </script>
+</body>
+</html>
